@@ -11,19 +11,20 @@ const App = () => {
   useEffect(()=>{
     (async ()=>{
       try{
-         let res=await axios.get('https://dummyjson.com/products')
+         let res=await axios.get('https://dummyjson.com/producs')
       console.log(res.data)
-      if(res.data.products.length==0){
-        Setdata('No data found')
+      if(res.data.products){
+        Setdata(str)
         Seterror('')
       }
       else{
-        Setdata(str)
+        Setdata('No data found')
         Seterror('')
       }
       }
      catch(error){
-      Seterror(error)
+      console.log(error)
+      Seterror(error.message)
       Setdata('')
      }
     })()
