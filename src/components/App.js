@@ -18,13 +18,13 @@ const App = () => {
         Seterror('')
       }
       else{
-        Setdata('No data found')
+        Setdata('[]')
         Seterror('')
       }
       }
      catch(error){
       console.log(error)
-      Seterror(error.message)
+      Seterror('An error occurred: '+error.message)
       Setdata('')
      }
     })()
