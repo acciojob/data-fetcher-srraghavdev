@@ -15,7 +15,8 @@ const App = () => {
   },[])
   return (
     <div>
-        {data? <h1>{data}</h1> : ''}
+      <h1>Data Fetched from API</h1>
+        {data? <pre>{data}</h1> : ''}
     </div>
   )
 }
