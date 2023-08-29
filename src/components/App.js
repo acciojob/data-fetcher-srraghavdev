@@ -15,7 +15,7 @@ const App = () => {
   },[])
   return (
     <div>
-        {data? <pre>{data}</pre> : ''}
+        {data? <h1>{data}</h1> : ''}
     </div>
   )
 }
