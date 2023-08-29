@@ -11,7 +11,7 @@ const App = () => {
   useEffect(()=>{
     (async ()=>{
       try{
-         let res=await axios.get('https://dummyjson.com/producs')
+         let res=await axios.get('https://dummyjson.com/products')
       console.log(res.data)
       if(res.data.products){
         Setdata(str)
